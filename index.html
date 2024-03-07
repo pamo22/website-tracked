@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./css/output.css" rel="stylesheet">
+    <link href="./css/slider.css" rel="stylesheet">
 </head>
 <body>
     <span class="absolute w-full">
@@ -53,42 +54,20 @@
         </div>
         
         <h1 class="text-3xl text-center font-comfortaa">Projects</h1>
-        <ul>
-            <li><img class="img1" src="//picsum.photos/300/200?1"></li>
-            <li><img class="img2" src="//picsum.photos/300/200?2"></li>
-            <li><img class="img3" src="//picsum.photos/300/200?3"></li>
-            <li><img class="img4" src="//picsum.photos/300/200?4"></li>
-            <li><img class="img5" src="//picsum.photos/300/200?5"></li>
-            <li><img class="img6" src="//picsum.photos/300/200?6"></li>
-            <li><img class="img7" src="//picsum.photos/300/200?7"></li>
-            <li><img class="img8" src="//picsum.photos/300/200?8"></li>
-            <li><img class="img9" src="//picsum.photos/300/200?9"></li>
-        </ul>
-        <button onclick="show(-1)">&lt;</button>
-        <button onclick="show(+1)">&gt;</button>
-        <style>
-          button.prev, button.next {
-            display: flex; font-size: 32px;
-            align-items: center; justify-content: center;
-            color: #FFF; background-color: #333;
-            border-radius: 50%;
-            width: 44px; height: 44px;
-          }
-          button.prev {
-            position: absolute; left: 0; top: 80px;
-          }
-          button.next {
-            position: absolute; right: 0; top: 80px;
-          }
-        </style>
+        <section class="slider-wrapper">
+          <button class="slide-arrow" id="slide-arrow-prev">
+            &#8249;
+          </button>
+          <button class="slide-arrow" id="slide-arrow-next">
+            &#8250;
+          </button>
+          <ul class="slides-container" id="slides-container">
+            <li class="slide"><img class="img1" src="//picsum.photos/300/200?1"></li>
+            <li class="slide"><img class="img1" src="//picsum.photos/300/200?2"></li>
+            <li class="slide"><img class="img1" src="//picsum.photos/300/200?3"></li>
+            <li class="slide"><img class="img1" src="//picsum.photos/300/200?4"></li>
+          </ul>
+        </section>
     </body>
-    <script>
-        let liEls = document.querySelectorAll('ul li');
-        let index = 0;
-        window.show = function(increase) {
-          index = index + increase;
-          index = Math.min(Math.max(index,0), liEls.length-1);
-          liEls[index].scrollIntoView({behavior: 'smooth'});
-        }
-    </script>
+    <script src="/js/slider.js"></script> 
 </html>

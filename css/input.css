@@ -10,9 +10,6 @@ html {
     font-family: Comfortaa, sans-serif;
 }
 
-ul { display: flex; margin: 0; padding: 0; overflow: hidden; }
-li { display: block; list-style: none; }
-
 /* comfortaa-regular - latin */
 @font-face {
     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
