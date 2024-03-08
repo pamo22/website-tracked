@@ -1,73 +1,74 @@
 <!doctype html>
 <html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./css/output.css" rel="stylesheet">
-    <link href="./css/slider.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./css/output.css" rel="stylesheet">
+  <link href="./css/slider.css" rel="stylesheet">
+  <script src="/js/index.js" type="text/javascript" defer></script>
 </head>
+
 <body>
-    <span class="absolute w-full">
-        <header class="h-20 text-2xl lg:w-9/12 xl:w-7/12 w-11/12 mx-auto table">
-          <span class="font-comfortaa p-3 align-middle table-cell">
-            <span class="grid grid-cols-2">
-              <span>
-                <a href="/" class="font-bold">Home</a>
-              </span>
-              <span class="font-bold text-right">
-                  <a href="https://google.com">Résumé</a>
-              </span>
-            </span>
+  <span class="absolute w-full">
+    <header class="h-20 text-2xl lg:w-9/12 xl:w-7/12 w-11/12 mx-auto table">
+      <span class="font-comfortaa p-3 align-middle table-cell">
+        <span class="grid grid-cols-2">
+          <span>
+            <a href="/" class="font-bold">Home</a>
           </span>
-        </header>
+          <span class="font-bold text-right">
+            <a href="https://google.com">Résumé</a>
+          </span>
+        </span>
       </span>
-  
+    </header>
+  </span>
 
-    <div class="w-11/12 xl:w-7/12 lg:w-9/12 mx-auto">
-        <div class= " min-h-[10vh] pt-[40vh] pb-[30vh] flex justify-center">
-            <div>
-            <h1 class="font-comfortaa text-6xl mb-4 text-center">Oscar Coghlan</h1>
-            <p class="font-comfortaa text-2xl text-center">Aspiring Software Engineer</p>
-            <p class="font-comfortaa text-lg underline text-center"><a href="#about">Learn more</a></p>
-            </div><br>
-        </div>
-        <div id="about"></div>
-        <div class="w-full mb-8 table-cell align-middle h-[100vh]">
+  <div class="w-11/12 xl:w-7/12 lg:w-9/12 mx-auto">
+    <div class=" min-h-[10vh] pt-[40vh] pb-[30vh] flex justify-center">
+      <div>
+        <h1 class="font-comfortaa text-6xl mb-4 text-center">Oscar Coghlan</h1>
+        <p class="font-comfortaa text-2xl text-center">Aspiring Software Engineer</p>
+        <p class="font-comfortaa text-lg underline text-center"><a href="#about">Learn more</a></p>
+      </div><br>
+    </div>
+    <div id="about"></div>
+    <div class="w-full mb-8 table-cell align-middle h-[100vh]">
+      <div class="bg-semidarkened p-6 rounded">
+        <h1 class="text-3xl font-comfortaa mb-6 text-center">About me</h1>
+        <p class="text-lg text-justify">
+          I'm Oscar, a dedicated software engineering student focused on delivering innovative solutions. On this portfolio website, I share my skills, projects, and experiences.
+          <br>
+          <br>
+          From an early age, I've been intrigued by the possibilities of software engineering. I find fulfillment in creating elegant and efficient solutions to complex challenges, combining creativity and problem-solving. As a student, I actively pursue opportunities for growth and contribution in this ever-evolving field.
+          <br>
+          <br>
+          I am currently completing a degree in software engineering, and have developed a strong foundation in programming languages, data structures, algorithms, and software design principles. I have extended many classes with Java, wrestled with the c++ standard library, and returned back to the basics with c. I've dipped my toes into .NET, and I've learnt how to express myself on the internet with PHP. I'm consistently curious about exploring new and old technologies.
+          <br>
+          <br>
+          Beyond academia, I thrive in collaborative environments, valuing effective communication and a positive impact. Approachable and enthusiastic, I appreciate diverse perspectives and eagerly contribute my own ideas. I am actively seeking meaningful opportunities to apply my skills and to expand my expertise as a software engineer.
+        </p>
 
-            <div class="bg-semidarkened p-6 rounded">
-                <h1 class="text-3xl font-comfortaa mb-6 text-center">About me</h1>
-                <p class="text-lg text-justify">
-                    I'm Oscar, a dedicated software engineering student focused on delivering innovative solutions. On this portfolio website, I share my skills, projects, and experiences.
-                    <br>
-                    <br>
-                    From an early age, I've been intrigued by the possibilities of software engineering. I find fulfillment in creating elegant and efficient solutions to complex challenges, combining creativity and problem-solving. As a student, I actively pursue opportunities for growth and contribution in this ever-evolving field.
-                    <br>
-                    <br>
-                    I am currently completing a degree in software engineering, and have developed a strong foundation in programming languages, data structures, algorithms, and software design principles. I have extended many classes with Java, wrestled with the c++ standard library, and returned back to the basics with c. I've dipped my toes into .NET, and I've learnt how to express myself on the internet with PHP. I'm consistently curious about exploring new and old technologies.
-                    <br>
-                    <br>
-                    Beyond academia, I thrive in collaborative environments, valuing effective communication and a positive impact. Approachable and enthusiastic, I appreciate diverse perspectives and eagerly contribute my own ideas. I am actively seeking meaningful opportunities to apply my skills and to expand my expertise as a software engineer. 
-                </p>
-                
-                <p class="text-center text-lg mt-4 w-full"><a href="#projects">Check out my projects :)<br>v</a></p>
-            </div>
-        </div>
-        
-        <h1 class="text-3xl text-center font-comfortaa">Projects</h1>
-        <section class="slider-wrapper">
-          <button class="slide-arrow" id="slide-arrow-prev">
-            &#8249;
-          </button>
-          <button class="slide-arrow" id="slide-arrow-next">
-            &#8250;
-          </button>
-          <ul class="slides-container" id="slides-container">
-            <li class="slide"><img class="img1" src="//picsum.photos/300/200?1"></li>
-            <li class="slide"><img class="img1" src="//picsum.photos/300/200?2"></li>
-            <li class="slide"><img class="img1" src="//picsum.photos/300/200?3"></li>
-            <li class="slide"><img class="img1" src="//picsum.photos/300/200?4"></li>
-          </ul>
-        </section>
-    </body>
-    <script src="/js/slider.js"></script> 
+        <p class="text-center text-lg mt-4 w-full"><a href="#projects">Check out my projects :)<br>v</a></p>
+      </div>
+    </div>
+
+    <h1 class="text-3xl text-center font-comfortaa">Projects</h1>
+    <section class="slider-wrapper">
+      <button class="slide-arrow" id="slide-arrow-prev">
+        &#8249;
+      </button>
+      <button class="slide-arrow" id="slide-arrow-next">
+        &#8250;
+      </button>
+      <ul class="slides-container" id="slides-container">
+        <li class="slide"><project-preview title="bye bye" content="mew signma male playlist top 100 alpha males" image="images/snakemed.jpg"></project-preview></li> 
+        <li class="slide"><project-preview></project-preview></li>
+      </ul>
+    </section>
+  </div>
+  <span id="endanchor"></span>
+</body>
+
 </html>

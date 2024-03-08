@@ -1,0 +1,20 @@
+
+{
+    "beautify.language": {
+        "js": {
+          "type": ["javascript", "json"],
+          "filename": [".jshintrc", ".jsbeautifyrc"]
+        },
+        "css": ["css", "scss"],
+        "html": ["htm", "html"]
+    },
+    "indent_size": 2,
+    "indent_char": " ",
+    "css": {
+        "indent_size": 2
+    },
+    "key": "shift+alt+f",
+    "command": "HookyQR.beautify",
+    "when": "editorFocus"
+}
+  
