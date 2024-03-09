@@ -7,9 +7,12 @@ class HeaderComponent extends HTMLElement {
     let title = this.getAttribute('title');
     let dir = this.getAttribute('dir');
     let slash = "/";
+    let titlehtml = "";
     if (title == null) {
       title = "";
       slash = "";
+    } else {
+      titlehtml = '<a href="/pages/' + title + '.html">' + title+ '</a>';
     }
     if (dir == null) {
       dir = "";
@@ -20,7 +23,7 @@ class HeaderComponent extends HTMLElement {
           <span class="font-comfortaa py-3 align-middle table-cell">
             <span class="grid grid-cols-2">
               <span>
-                <a href="/" class="font-bold">Home`+slash+`</a>`+dir+slash+`<a href="/pages/`+title+`.html">`+title+`</a>
+                <a href="/" class="font-bold">Home`+slash+`</a>`+dir+slash+titlehtml +`
               </span>
               <span class="font-bold text-right">
                 <a href="https://google.com">Résumé</a>
