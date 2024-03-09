@@ -15,9 +15,22 @@
   <header-component dir="projects" title="rusnake"></header-component>
   <div class="w-11/12 xl:w-7/12 lg:w-9/12 mx-auto">
     <div class="pt-20">
-
-    </div >
-
+      <hr class="mb-6">
+      <p class="px-6 pt-6 text-lg font-cantrell text-justify">
+        If you know how to compile rust, go ahead and give this one a try, I'm proud of it, in a way. There is something about rust that just seems to make you admire your own code, even if it may be ugly and bad. To achieve a free-form snake that doesn't follow a grid, I used the age old "'vector' of vectors" technique, rust actually makes this really easy, letting you create a Vec::&lt;[f32;2]&gt;, kind of like an std::vector&lt;std::pair&lt;float, float&gt;&gt; in c++. Anyway, I did this in the naive way, just letting nannou (great library) draw a line of points and drawing a circle at each end of the 'snake'. Every frame I set each point in the vector to be the point in front of it to move the snake forward, this has the side effect of needing to stack the 'line' really densely in order for the snake to be a reasonable length and move smoothly at the same time, a problem which I solved by making it jittery at the end, and just making the movement of the head smooth (I didn't solve the problem). Have a look at the gameplay in this video below.
+      </p>
+      <div class="grid lg:grid-cols-2 grid-cols-1">
+        <div class="justify-center flex w-full py-6">
+          <video class="p-8 border-1 border-zinc-300" muted controls autoplay loop>
+            <source src="/videos/rusnake.mp4" type="video/mp4">
+          </video>
+        </div>
+          <div class=" pt-8">
+            <git-button text="View on Codeberg" image="/images/codeberg/logo/icon/svg/codeberg-logo_icon_blue.svg" link="https://codeberg.org/pamo22/rusnake"></git-button>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
   <span id="endanchor"></span>
 </body>
