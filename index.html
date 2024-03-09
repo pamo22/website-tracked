@@ -4,27 +4,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./css/output.css" rel="stylesheet">
-  <link href="./css/slider.css" rel="stylesheet">
+  <link href="/css/output.css" rel="stylesheet">
+  <link href="/css/slider.css" rel="stylesheet">
+  <link href="/css/fonts.css" rel="stylesheet">
   <script src="/js/index.js" type="text/javascript" defer></script>
 </head>
 
 <body>
-  <span class="absolute w-full">
-    <header class="h-20 text-2xl lg:w-9/12 xl:w-7/12 w-11/12 mx-auto table">
-      <span class="font-comfortaa p-3 align-middle table-cell">
-        <span class="grid grid-cols-2">
-          <span>
-            <a href="/" class="font-bold">Home</a>
-          </span>
-          <span class="font-bold text-right">
-            <a href="https://google.com">Résumé</a>
-          </span>
-        </span>
-      </span>
-    </header>
-  </span>
-
+  <header-component></header-component>
   <div class="w-11/12 xl:w-7/12 lg:w-9/12 mx-auto">
     <div class=" min-h-[10vh] pt-[40vh] pb-[30vh] flex justify-center">
       <div>
@@ -37,7 +24,7 @@
     <div class="w-full mb-8 table-cell align-middle h-[100vh]">
       <div class="bg-semidarkened p-6 rounded">
         <h1 class="text-3xl font-comfortaa mb-6 text-center">About me</h1>
-        <p class="text-lg text-justify">
+        <p class="text-lg text-justify font-cantarell">
           I'm Oscar, a dedicated software engineering student focused on delivering innovative solutions. On this portfolio website, I share my skills, projects, and experiences.
           <br>
           <br>
@@ -54,10 +41,13 @@
       </div>
     </div>
 
-    <h1 id="projects" class="text-3xl text-center font-comfortaa">Projects</h1>
-    <div class="grid grid-cols-1 gap-8 mt-8 md:grid-cols-2 lg:grid-cols-3"></div>
-      <project-preview title="bye bye" content="mew signma male playlist top 100 alpha males" image="snakemed.jpg"></project-preview>
-      <project-preview title="bye bye" content="mew signma male playlist top 100 alpha males" image="snakemed.jpg"></project-preview>
+    <h1 id="projects" class="text-3xl text-center font-comfortaa mt-20 pt-10">Projects</h1>
+    <div class="grid grid-cols-1 gap-8 mt-8 md:grid-cols-2 lg:grid-cols-3">
+      <project-preview title="rusnake" content="A somewhat rounded implementation of the classic game 'snake'. Made in rust." image="rusnake.png"></project-preview>
+      <project-preview title="automata-gl" content="Conway's Game of Life and other cellular automata. Made in c++. " image="automata-gl.png" filter="crisp-edges"></project-preview>
+      <project-preview title="java-snake" content="Another snake game, this time in java" image="java-snake.png" filter="crisp-edges"></project-preview>
+      <project-preview title="collisions-cpp" content="A simple particle simulation from scratch made in c++ and OpenGL." image="collisions-cpp.png" filter="crisp-edges"></project-preview>
+      <project-preview title="website-forum" content="A forum website made with PHP, a MariaDB server, and zip ties, just like the good old days." image="website-forum.png"></project-preview>
     </div>
     <!--
     <section class="slider-wrapper">
@@ -75,6 +65,8 @@
     -->
   </div>
   <span id="endanchor"></span>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <footer-component></footer-component>
 </body>
 
 </html>
