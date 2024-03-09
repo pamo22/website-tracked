@@ -14,7 +14,7 @@ class ProjectPreview extends HTMLElement {
 
         <img src="images/` + image + `" alt="`+title+` thumbnail image" class="w-full h-48 object-cover `+filter+`">
         <div class="p-4">
-          <h3 class="font-comfortaa text-2xl font-bold text-gray-900 mb-2">`+title+`</h3>
+          <h1 class="font-comfortaa text-2xl font-bold text-gray-900 mb-2">`+title+`</h3>
           <p class="font-cantarell text-base text-gray-500 line-clamp-2 min-h-[48px]">`+content+`</p>
         </div>
       </div>
