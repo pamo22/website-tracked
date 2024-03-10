@@ -63,7 +63,7 @@ class HeaderComponent extends HTMLElement {
                 <a href="/" class="font-bold">Home`+slash+`</a>`+dir+slash+titlehtml +`
               </span>
               <span class="font-bold text-right">
-                <a href="https://google.com">Résumé</a>
+                <a href="/resource/resume.pdf">Résumé</a>
               </span>
             </span>
           </span>
