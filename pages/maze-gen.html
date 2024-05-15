@@ -14,12 +14,15 @@
 		<div class="w-11/12 xl:w-7/12 lg:w-9/12 mx-auto">
 			<div  class="pt-20">
 				<hr class="mb-6">
+				<p class="px-6 pt-6 text-lg font-cantrell text-justify">
+				This maze generator implements the randomized depth first search maze generation algorithm, as such, it is slow. To alliviate the fundamental slowness of this algorithm, I implemented a very fast, very bad pseudorandom-feeling number generator called a linear feedback shift register, famously used by NES tetris to choose next pieces. While it is slow, it is not so slow that the human waiting time is the bottleneck, a problem which I did not choose to work very hard on was the representation of the maze in memory, I use objects to represent each cell, which isn't the bad part, the bad part is that I use too many pointers. Each cell contains four pointers which point to the wall that surrounds it, thats 24 bytes for each cell just for the walls! As well as this, since I moved from allocating on the stack with std::array&lt;std::array, n&gt;, into allocation onto the heap with new, in order to preserve the addressing scheme I was using, I needed to allocate the array not as a contiguous chunk in memory, but a list of pointers that point to cell arrays. Anyway, moral of the story is, if you are making something that you want to scale, think about memory usage.
+				</p>
 
 			    <div class="justify-center flex w-full py-6">
 					<img src="/images/mazebigHD.png"/>
 			    </div>
 				<div class=" pt-8">
-					<git-button text="View on Codeberg" image="/images/codeberg/logo/icon/svg/codeberg-logo_icon_blue.svg" link="https://codeberg.org/pamo22/rusnake"></git-button>
+					<git-button text="View on Codeberg" image="/images/codeberg/logo/icon/svg/codeberg-logo_icon_blue.svg" link="https://codeberg.org/pamo22/maze-gen"></git-button>
 				</div>
 			</div >
 
